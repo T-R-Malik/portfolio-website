@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bg: #1F1A17;
+    --surface: #2B2420;
+    --card: #3A312C;
+    --text: #F4EBDD;
+    --text-secondary: #CDBBA7;
+    --accent: #C8A46B;
+    --button: #8B5E3C;
+    --button-hover: #A67C52;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #1F1A17;
+    color: #F4EBDD;
+    line-height: 1.7;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+h1, h2, h3 {
+    font-family:'Cormorant Garamond', serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+header {
+    background: #2B2420;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+nav h2 {
+    color:#C8A46B;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: #F4EBDD;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color:#C8A46B;
+;
+}
+
+#hero {
+    width: 90%;
+    max-width: 1200px;
+    margin: 100px auto;
+    text-align: center;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.intro {
+    color: var(--accent);
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.hero-text h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+
+.hero-text h2 {
+    color: var(--accent);
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+
+.description {
+    color:var(--text-secondary);
+    max-width: 550px;
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.hero-buttons a {
+    padding: 15px 35px;
+    border-radius: 8px;
+    transition: 0.3s;
+    font-weight: 600;
+}
+
+.hero-buttons a:first-child {
+    background: var(--button);
+    color:var(--text);}
+
+.hero-buttons a:first-child:hover {
+    background: var(--button-hover);
+}
+
+.secondary-btn {
+    border: 2px solid var(--accent);
+    color: var(--accent);
+}
+
+.secondary-btn:hover {
+    background: var(--accent);
+    color: #1F1A17;
+}
+
+.placeholder {
+    width: 350px;
+    height: 350px;
+    background: var(--accent);
+    border: 3px solid var(--accent);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-secondary);
+    font-size: 1.2rem;
+    border-radius: 50%;
+
+    font-size: 5rem;
+    font-family: 'Cormorant Garamond', serif;
+    color: var(--bg);
+}
+
+section {
+    width: 90%;
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 50px;
+    background: var(--surface);
+    border-radius: 15px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.project-card {
+    background: var(--card);
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid rgba(200, 164, 107, 0.15);
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+    border-color: var(--accent)
+}
+
+.project-card h3 {
+    color: var(--accent);
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+}
+
+.project-card p {
+    color: var(--text-secondary);
+    margin-bottom: 25px;
+}
+
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.project-tech span {
+    background: #443730;
+    color: var(--accent);
+    padding: 6px 14px;
+    border-radius: 30px;
+    font-size: 0.85rem;
+}
+
+.project-card a {
+    color: var(--accent);
+    font-weight: 600;
+}
+
+.project-card a:hover {
+    letter-spacing: 1px;
+}
