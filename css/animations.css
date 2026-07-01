@@ -622,3 +622,23 @@ footer{
         scroll-behavior: auto !important;
     }
 }
+
+/* about-timeline */
+.timeline-item {
+    opacity: 0;
+    transform: translateY(40px);
+    animation: timelineFade .8s forwards;
+}
+
+.timeline-item:nth-child(1) { animation-delay: .1s; }
+.timeline-item:nth-child(2) { animation-delay: .3s; }
+.timeline-item:nth-child(3) { animation-delay: .5s; }
+.timeline-item:nth-child(4) { animation-delay: .7s; }
+.timeline-item:nth-child(5) { animation-delay: .9s; }
+
+@keyframes timelineFade {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
